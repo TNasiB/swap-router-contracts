@@ -13,16 +13,16 @@ per the terms defined [here](./bug-bounty.md).
 ## Local deployment
 
 In order to deploy this code to a local testnet, you should install the npm package
-`@uniswap/swap-router-contracts`
+`@atleta-chainswap-router-contracts`
 and import bytecode imported from artifacts located at
-`@uniswap/swap-router-contracts/artifacts/contracts/*/*.json`.
+`@atleta-chainswap-router-contracts/artifacts/contracts/*/*.json`.
 For example:
 
 ```typescript
 import {
   abi as SWAP_ROUTER_ABI,
   bytecode as SWAP_ROUTER_BYTECODE,
-} from '@uniswap/swap-router-contracts/artifacts/contracts/SwapRouter02.sol/SwapRouter02.json'
+} from '@atleta-chainswap-router-contracts/artifacts/contracts/SwapRouter02.sol/SwapRouter02.json'
 
 // deploy the bytecode
 ```
@@ -34,10 +34,10 @@ your local deployment.
 ## Using solidity interfaces
 
 The swap router contract interfaces are available for import into solidity smart contracts
-via the npm artifact `@uniswap/swap-router-contracts`, e.g.:
+via the npm artifact `@atleta-chainswap-router-contracts`, e.g.:
 
 ```solidity
-import '@uniswap/swap-router-contracts/contracts/interfaces/ISwapRouter02.sol';
+import '@atleta-chainswap-router-contracts/contracts/interfaces/ISwapRouter02.sol';
 
 contract MyContract {
   ISwapRouter02 router;
